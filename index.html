@@ -12,10 +12,33 @@
         <a href="#"><img class="logo-big" src="DW P2 - Ressources Booki FR/images/logo/Booki.png" alt="logo"></a>
         <nav>
             <ul class="nav-header">
-                <a href="#"><li>Hébergements</li></a>
-                <a href="#"><li>Activités</li></a>
+                <li><a href="#">Hébergements</a></li>
+                <li><a href="#">Activités</a></li>
             </ul>
         </nav>
     </header>
+    <main>
+        <section id="first-section">
+            <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+            <p>En plein centre ville ou en pleine nature</p>
+            <form method="post" action="treatment.php">
+                <p>
+                    <i class="fa-solid fa-location-dot"></i><label for="city">Entrez votre ville :</label><input type="text" name="city" id="city" placeholder="Marseille, France"><input id="rechercher" type="button" value="Rechercher">
+                </p>
+            </form>
+                <div>
+                    <h2>Filtres</h2>
+                    <ul>
+                        <li><span class="blue-logo"><i class="fa-solid fa-money-bill-wave"></i></span> Economique</li>
+                        <li><span class="blue-logo"><i class="fa-solid fa-child-reaching"></i></span> Familial</li>
+                        <li><span class="blue-logo"><i class="fa-solid fa-heart"></i></span> Romantique</li>
+                        <li><span class="blue-logo"><i class="fa-solid fa-dog"></i></span> Animaux autorisés</li>
+                    </ul>
+                </div>
+                <p>
+                    <i class="fa-solid fa-info"></i><span> Plus de 500 logemnts sont disponibles dans cette ville</span>
+                </p>
+        </section>
+    </main>
 </body>
 </html>
