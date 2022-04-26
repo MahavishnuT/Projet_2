@@ -366,7 +366,6 @@ header {
   display: flex;
   flex-flow: row;
   justify-content: space-between;
-  align-items: flex-start;
 }
 
 .logo-big {
@@ -401,7 +400,7 @@ header {
   header {
     display: flex;
     flex-flow: column;
-    justify-content: center;
+    align-items: center;
   }
 
   .logo-big {
@@ -523,7 +522,7 @@ h2 {
 .blue-logo {
   background-color: #DEEBFF;
   color: #0065FC;
-  padding: 10px 10px;
+  padding: 13px 15px;
   border-radius: 100px;
 }
 
@@ -537,6 +536,7 @@ h2 {
   }
 
   #first-section button {
+    display: block;
     background-color: #0065FC;
     color: white;
     font-weight: 650;
@@ -583,11 +583,12 @@ h2 {
 }
 
 .card-hebergement:hover .card-image-hebergement img {
-  width: 150%;
+  width: 160%;
+  position: absolute;
 }
 
 .card-image-hebergement {
-  height: 150px;
+  height: 200px;
   position: relative;
   overflow: hidden;
   border-radius: 10px 10px 0 0;
@@ -607,5 +608,4 @@ h2 {
 .card-body-hebergement {
   text-align: left;
   padding: 15px 20px;
-
 }
