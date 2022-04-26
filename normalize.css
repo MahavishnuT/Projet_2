@@ -551,9 +551,17 @@ h2 {
 
 #second-section {
   margin-left: 20px;
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
   width: 65%;
+  background-color: #F2F2F2;
+  border-radius: 10px;
+}
+
+#second-section h1 {
+  margin-left: 20px;
+  margin-top: 20px;
 }
 
 #cards-hebergement {
@@ -562,11 +570,42 @@ h2 {
 }
 
 .card-hebergement {
-  display: flex;
-  flex-direction: column;
   width: 200px;
+  margin: 10px;
+  background-color: white;
+  box-shadow: 0px 5px 20px #999;
+  border-radius: 10px;
 }
 
-.image-card-hebergement {
-  object-fit: contain;
+.card-hebergement a {
+  color: #333;
+  text-decoration: none;
+}
+
+.card-hebergement:hover .card-image-hebergement img {
+  width: 150%;
+}
+
+.card-image-hebergement {
+  height: 150px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px 10px 0 0;
+}
+
+.card-image-hebergement img {
+  width: 150%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition-property: width;
+  transition-duration: .3s;
+  transition-timing-function: ease;
+}
+
+.card-body-hebergement {
+  text-align: left;
+  padding: 15px 20px;
+
 }
