@@ -653,6 +653,13 @@ h2 {
   display: flex;
 }
 
+@media screen and (max-width: 768px) {
+  #second-and-third {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 /* Second section */
 
 #second-section {
@@ -671,8 +678,8 @@ h2 {
 }
 
 #cards-hebergement {
-  padding-left: 10px;
   display: flex;
+  justify-content: space-evenly;
   flex-flow: wrap;
 }
 
@@ -728,6 +735,29 @@ h2 {
   font-size: 12px;
 }
 
+#show-more {
+  margin: 10px 10px 10px 20px;
+}
+
+#show-more a {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+
+  #second-section {
+    background-color: white;
+    width: 100%;
+    margin-right: 20px;
+    order: 2;
+  }
+
+  .card-hebergement {
+    width: 300px;
+  }
+
+}
+
 /* Third section */
 
 #third-section {
@@ -754,13 +784,14 @@ h2 {
 }
 
 #cards-populaires {
-  padding-left: 10px;
   display: flex;
+  flex-direction: column;
   flex-flow: wrap;
+  justify-content: center;
 }
 
 .card-populaire {
-  width: 230px;
+  width: 300px;
   margin: 10px;
   background-color: white;
   box-shadow: 0px 5px 20px #999;
@@ -802,6 +833,7 @@ h2 {
 .card-body-populaire {
   text-align: left;
   flex-wrap: wrap;
+  margin: 15px 0 0 10px;
 }
 
 #third-section h2 {
@@ -811,4 +843,87 @@ h2 {
 
 .card-excerpt-populaire {
   font-size: 12px;
+}
+
+@media screen and (max-width: 768px) {
+
+  #third-section {
+    width: 100%;
+    border-radius: 0%;
+    order: 1;
+  }
+}
+
+/* Fourth Section */
+
+#fourth-section {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+} 
+
+#fourth-section h1 {
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+#cards-activites {
+  display: flex;
+  align-content: space-between;
+  flex-flow: column wrap;
+  height: 600px;
+}
+
+.card-activites {
+  width: 24%;
+  margin-bottom: 2%;
+  background-color: white;
+  box-shadow: 0px 5px 20px #999;
+  border-radius: 10px;
+}
+
+.card-activites a {
+  color: #333;
+  text-decoration: none;
+}
+
+.card-activites:hover .card-image-activites img {
+  width: 120%;
+  position: absolute;
+}
+
+.card-image-activites {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px 10px 0 0;
+  background-color: white;
+}
+
+.vieux-port .card-image-activites {
+  height: 400px;
+}
+
+.card-image-activites img {
+  width: 110%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition-property: width;
+  transition-duration: .3s;
+  transition-timing-function: ease;
+}
+
+.card-body-activites {
+  text-align: left;
+  padding: 10px 15px;
+}
+
+#fourth-section h2 {
+  margin: 0px;
+  font-size: 13px;
+}
+
+.vieux-port .card-image-activites img {
+  height: 100%;
 }
