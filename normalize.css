@@ -3,11 +3,6 @@
 /* Document
    ========================================================================== */
 
-@font-face {
-    font-family: "raleway";
-    src: url("Fonts/Raleway-VariableFont_wght.ttf") format("truetype");
-}
-
 * {
     box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -875,7 +870,7 @@ h2 {
 }
 
 .card-activites {
-  width: 24%;
+  width: 250px;
   margin-bottom: 2%;
   background-color: white;
   box-shadow: 0px 5px 20px #999;
@@ -888,7 +883,6 @@ h2 {
 }
 
 .card-activites:hover .card-image-activites img {
-  width: 120%;
   position: absolute;
 }
 
@@ -899,12 +893,7 @@ h2 {
   background-color: white;
 }
 
-.vieux-port .card-image-activites {
-  height: 400px;
-}
-
 .card-image-activites img {
-  width: 110%;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -912,6 +901,21 @@ h2 {
   transition-property: width;
   transition-duration: .3s;
   transition-timing-function: ease;
+}
+
+/* Vieux Port */
+
+.vieux-port .card-image-activites {
+  height: 400px;
+}
+
+.vieux-port .card-image-activites img {
+  height: 110%;
+  width: auto;
+}
+
+.vieux-port:hover .card-image-activites img {
+  width: 280%;
 }
 
 .card-body-activites {
@@ -924,6 +928,3 @@ h2 {
   font-size: 13px;
 }
 
-.vieux-port .card-image-activites img {
-  height: 100%;
-}
