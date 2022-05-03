@@ -864,9 +864,8 @@ h2 {
 
 #cards-activites {
   display: flex;
-  align-content: space-between;
-  flex-flow: column wrap;
-  height: 600px;
+  align-content: space-envenly;
+  flex-flow: row wrap;
 }
 
 .card-activites {
@@ -875,6 +874,8 @@ h2 {
   background-color: white;
   box-shadow: 0px 5px 20px #999;
   border-radius: 10px;
+  height: fit-content;
+  margin-inline: 15px;
 }
 
 .card-activites a {
@@ -910,12 +911,81 @@ h2 {
 }
 
 .vieux-port .card-image-activites img {
-  height: 110%;
-  width: auto;
+  width: 250%;
 }
 
 .vieux-port:hover .card-image-activites img {
-  width: 280%;
+  width: 270%;
+}
+
+/* Fort de Pomègues */
+
+.fort-pomegues .card-image-activites {
+  height: 210px;
+}
+
+.fort-pomegues .card-image-activites img {
+  width: 100%;
+}
+
+.fort-pomegues:hover .card-image-activites img {
+  width: 110%;
+}
+
+/* Îles du Frioul */
+
+.iles-frioul .card-image-activites {
+  height: 140px;
+}
+
+.iles-frioul .card-image-activites img {
+  width: 100%;
+}
+
+.iles-frioul:hover .card-image-activites img {
+  width: 110%;
+}
+
+/* Parc national des Calanques */
+
+.calanques .card-image-activites {
+  height: 400px;
+}
+
+.calanques .card-image-activites img {
+  width: 250%;
+}
+
+.calanques:hover .card-image-activites img {
+  width: 270%;
+}
+
+/* Notre-Dame-de-la-Garde */
+
+.notre-dame .card-image-activites {
+  height: 140px;
+}
+
+.notre-dame .card-image-activites img {
+  width: 100%;
+}
+
+.notre-dame:hover .card-image-activites img {
+  width: 110%;
+}
+
+/* Parc Longchamp */
+
+.parc-longchamp .card-image-activites {
+  height: 210px;
+}
+
+.parc-longchamp .card-image-activites img {
+  width: 120%;
+}
+
+.parc-longchamp:hover .card-image-activites img {
+  width: 130%;
 }
 
 .card-body-activites {
@@ -928,3 +998,38 @@ h2 {
   font-size: 13px;
 }
 
+/* Footer */
+
+footer {
+  display: flex;
+  background-color: #F2F2F2;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+footer div {
+  margin-left: 40px;
+  margin-right: 50px;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer li {
+  font-size: 15px;
+  margin: 7px 0 7px 0;
+}
+
+footer a {
+  text-decoration: none;
+  color: #333;
+}
+
+@media screen and (max-width: 768px) {
+
+  footer {
+    flex-direction: column;
+  }
+}
