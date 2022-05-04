@@ -18,6 +18,7 @@
  html {
     line-height: 1.15; /* 1 */
     -webkit-text-size-adjust: 100%; /* 2 */
+    scroll-behavior: smooth;
   }
   
   /* Sections
@@ -380,8 +381,8 @@ header {
   font-size: 15px;
   font-weight: 450;
   padding: 20px 30px;
-  font-style: none;
-  border: 2px solid transparent;
+  list-style: none;
+  border-top: 2px solid transparent;
 }
 
 .nav-header a {
@@ -427,10 +428,6 @@ header {
     color: #0065FC;
     border-bottom: 3px solid #0065FC;
     border-top: none;
-  }
-
-  .nav-header li {
-    border-bottom: 3px solid #F2F2F2;
   }
 
   header li {
@@ -509,6 +506,7 @@ form label {
   background-color: #DEEBFF;
   color: #0065FC;
   cursor: pointer;
+  transition: 600ms;
 }
 
 #first-section div {
@@ -546,6 +544,12 @@ h2 {
 
 #first-section li:hover {
   cursor: pointer;
+}
+
+#first-section li:hover .blue-logo{
+  color: #DEEBFF;
+  background-color: #0065FC;
+  transition: 600ms;
 }
 
 .blue-logo {
@@ -602,7 +606,8 @@ h2 {
   #city {
     height: 50px;
     width: 200px;
-    font-size: 19px
+    font-size: 19px;
+    position: relative;
   }
 
   #rechercher {
@@ -620,7 +625,14 @@ h2 {
     padding: 10px;
     height: 50px;
     width: 50px;
-    font-size: 19px
+    font-size: 19px;
+  }
+
+  #first-section button:hover {
+    background-color: #DEEBFF;
+    color: #0065FC;
+    cursor: pointer;
+    transition: 400ms;
   }
 
   #first-section {
@@ -1035,7 +1047,19 @@ h2 {
   .vieux-port .card-image-activites  {
     height: 140px;
   }
-  
+
+  .fort-pomegues .card-image-activites {
+    height: 140px;
+  }
+
+  .calanques .card-image-activites {
+    height: 140px;
+  }
+
+  .parc-longchamp .card-image-activites {
+    height: 140px;
+  }
+
   .card-image-activites img {
     height: auto;
   }
