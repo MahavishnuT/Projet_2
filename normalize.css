@@ -1073,6 +1073,7 @@ footer {
   background-color: #F2F2F2;
   justify-content: flex-start;
   flex-wrap: wrap;
+  margin-top: 20px;
 }
 
 footer div {
