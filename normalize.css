@@ -739,8 +739,14 @@ h2 {
 }
 
 .card-body-hebergement {
+  display: flex;
+  flex-direction: column;
   text-align: left;
   padding: 10px 15px;
+}
+
+.card-body-hebergement p {
+  margin: 0;
 }
 
 #second-section h2 {
@@ -750,6 +756,18 @@ h2 {
 
 .card-excerpt-hebergement {
   font-size: 12px;
+}
+
+.fa-star {
+  font-size: 10px;
+}
+
+.blue {
+  color: #0065FC;
+}
+
+.grey {
+  color: #DEEBFF;
 }
 
 #show-more {
@@ -852,6 +870,10 @@ h2 {
   text-align: left;
   flex-wrap: wrap;
   margin: 15px 0 0 10px;
+}
+
+.card-body-populaire p {
+  margin: 5px 0 5px 0;
 }
 
 #third-section h2 {
