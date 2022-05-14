@@ -571,6 +571,10 @@ h2 {
   display: none;
 }
 
+#first-section p span {
+  line-height: 30px;
+}
+
 @media screen and (max-width: 768px) {
 
   h1 {
@@ -767,7 +771,7 @@ h2 {
   }
 
   .card-hebergement {
-    width: 330px;
+    width: 360px;
   }
 
 }
@@ -868,7 +872,7 @@ h2 {
   }
 
   .card-populaire {
-    width: 330px;
+    width: 360px;
   }
 }
 
@@ -1039,7 +1043,7 @@ h2 {
   }
 
   .card-activites {
-    width: 330px;
+    width: 360px;
     margin: 10px;
     height: 180px;
   }
